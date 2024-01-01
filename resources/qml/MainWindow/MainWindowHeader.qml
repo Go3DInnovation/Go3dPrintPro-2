@@ -30,6 +30,7 @@ Item
         fillMode: Image.PreserveAspectFit
         sourceSize.width: width
         sourceSize.height: height
+        visible: false
     }
     ButtonGroup
     {
@@ -135,7 +136,7 @@ Item
         text: catalog.i18nc("@action:button", "Marketplace")
         height: Math.round(0.5 * UM.Theme.getSize("main_window_header").height)
         onClicked: Cura.Actions.browsePackages.trigger()
-
+        visible: false
         hoverEnabled: true
 
         background: Rectangle
@@ -201,6 +202,7 @@ Item
             right: accountWidget.left
             rightMargin: UM.Theme.getSize("default_margin").width
         }
+        visible: false
     }
 
     AccountWidget
@@ -212,5 +214,6 @@ Item
             right: parent.right
             rightMargin: UM.Theme.getSize("default_margin").width
         }
+        visible: false
     }
 }
