@@ -14,7 +14,7 @@ required_conan_version = ">=1.58.0 <2.0.0"
 
 
 class CuraConan(ConanFile):
-    name = "cura"
+    name = "Go3d"
     license = "LGPL-3.0"
     author = "UltiMaker"
     url = "https://github.com/Ultimaker/cura"
@@ -42,7 +42,7 @@ class CuraConan(ConanFile):
         "staging": "False",
         "devtools": False,
         "cloud_api_version": "1",
-        "display_name": "UltiMaker Cura",
+        "display_name": "Go3dPrintPro",
         "cura_debug_mode": False,  # Not yet implemented
         "internal": False,
         "enable_i18n": False,
@@ -50,7 +50,7 @@ class CuraConan(ConanFile):
 
     def set_version(self):
         if not self.version:
-            self.version = "5.6.0"
+            self.version = "1.0.0"
 
     @property
     def _i18n_options(self):
